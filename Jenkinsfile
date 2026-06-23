@@ -10,6 +10,7 @@ pipeline {
                 }
             }
             steps {
+                cleanWs()
                 sh '''
                     mkdir .npm
                     sudo chown -R 119:124 "/.npm"
