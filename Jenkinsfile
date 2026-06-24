@@ -17,8 +17,6 @@ pipeline {
             }
             steps {
                 sh '''
-                    mkdir .npm
-                    sudo chown -R 119:124 "/.npm"
                     ls -la
                     node --version
                     npm --version
